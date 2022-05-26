@@ -63,19 +63,8 @@
                         data: './collisions1601.geojson'
                     },
                     paint: {
-                        'circle-radius': [
-                            'interpolate',
-                            ['linear'],
-                            ['number',['get','Casualty']],
-                            0,
-                            4,
-                            5,
-                            24
-                        ],
-                        'circle-color':[
-                            'interpolate',
-                            ['linear'],
-                            ['number',['get','Casualty']],
+                        'circle-radius': ['interpolate',['linear'],['number',['get','Casualty']],0,4,5,24],
+                        'circle-color':['interpolate',['linear'],'number',['get','Casualty']],
                             0,
                             '#2DC4B2',
                              1,
